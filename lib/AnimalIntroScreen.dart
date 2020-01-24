@@ -47,7 +47,7 @@ class AnimalIntroScreen extends StatelessWidget {
                             textAlign: TextAlign.center,
                             style: new TextStyle(
                               color: Colors.white,
-                              fontSize: 24,
+                              fontSize: 23,
                             ),
                           ),
                         ),
