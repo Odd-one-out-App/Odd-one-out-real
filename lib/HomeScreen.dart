@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:odd_one_out/InputScreen.dart';
 import 'package:odd_one_out/TutorialScreen.dart';
 
@@ -10,6 +11,9 @@ var inputScreen = new InputScreen();
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return new Scaffold(
         backgroundColor: Colors.grey[600],
 //        drawer: Drawer(

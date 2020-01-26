@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:odd_one_out/CatagoryScreen.dart';
 
 import 'RevealScreen.dart';
@@ -12,6 +13,9 @@ class MythologyIntroScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return Scaffold(
         backgroundColor: Colors.grey[600],
 

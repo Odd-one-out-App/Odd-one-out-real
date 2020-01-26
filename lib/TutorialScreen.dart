@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:odd_one_out/HomeScreen.dart';
 
 
@@ -8,6 +9,9 @@ import 'package:odd_one_out/HomeScreen.dart';
 class TutorialScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return new Scaffold(
       backgroundColor: Colors.grey[500],
 //      drawer: Drawer(

@@ -2,6 +2,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:odd_one_out/CatagoryScreen.dart';
 
 class InputScreen extends StatelessWidget {
@@ -9,7 +10,7 @@ class InputScreen extends StatelessWidget {
 
 
 //  List<TextEditingController> formInput = [];
- final list = new  List<TextEditingController>();
+ var list = new  List<TextEditingController>();
 
   TextEditingController nameInput1 = new TextEditingController();
   TextEditingController nameInput2 = new TextEditingController();
@@ -19,7 +20,6 @@ class InputScreen extends StatelessWidget {
   TextEditingController nameInput6 = new TextEditingController();
 
 void saveInput(){
-
   list.add(nameInput1);
   list.add(nameInput2);
   list.add(nameInput3);
@@ -47,6 +47,9 @@ void saveInput(){
 
 
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return Scaffold(
         backgroundColor: Colors.grey[600],
 //        drawer: Drawer(

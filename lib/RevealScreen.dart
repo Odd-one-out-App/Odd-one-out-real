@@ -2,16 +2,24 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as prefix0;
+import 'package:flutter/services.dart';
 import 'package:odd_one_out/InputScreen.dart';
 import 'package:odd_one_out/RevealScreenP2.dart';
 import 'package:odd_one_out/TutorialScreen.dart';
+import 'package:odd_one_out/AnimalRevealScreen.dart';
+
 
 var inputScreen = new InputScreen();
 
+ var input1 = inputScreen.nameInput1.text;
+List<String> food=["Pizza","Out of the loop"];
 
 class RevealScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return new Scaffold(
         backgroundColor: Colors.grey[600],
 //        drawer: Drawer(
@@ -37,7 +45,7 @@ class RevealScreen extends StatelessWidget {
                       width: 400,
                       height: 400,
                       child: Text(
-                        "Person 1", //could be "name1" from a list of names gathered by the input screen
+                        ("person1") , //could be "name1" from a list of names gathered by the input screen
                         style: TextStyle(
                           fontSize: 40.0,
                           color: Colors.white,
@@ -56,7 +64,7 @@ class RevealScreen extends StatelessWidget {
                               ),
                               onPressed: () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                                  return InputScreen();
+                                  return AnimalRevealScreen();
                                 }));
                               },
                               child: Text("Tap to reveal!", style: TextStyle(fontSize: 30,)),

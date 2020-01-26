@@ -3,6 +3,7 @@ import 'dart:ui' as prefix1;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as prefix0;
+import 'package:flutter/services.dart';
 import 'package:odd_one_out/InputScreen.dart';
 import 'package:odd_one_out/QuestionR2Q1.dart';
 import 'package:odd_one_out/TutorialScreen.dart';
@@ -13,6 +14,9 @@ var inputScreen = new InputScreen();
 class QuestionR1Q3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return new Scaffold(
         backgroundColor: Colors.grey[600],
 //        drawer: Drawer(

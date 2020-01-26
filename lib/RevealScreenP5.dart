@@ -2,6 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as prefix0;
+import 'package:flutter/services.dart';
+import 'package:odd_one_out/AnimalRevealScreen.dart';
+import 'package:odd_one_out/AnimalRevealScreen5.dart';
 import 'package:odd_one_out/InputScreen.dart';
 import 'package:odd_one_out/RevealScreenP6.dart';
 import 'package:odd_one_out/TutorialScreen.dart';
@@ -12,6 +15,9 @@ var inputScreen = new InputScreen();
 class RevealScreenP5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return new Scaffold(
         backgroundColor: Colors.grey[600],
 //        drawer: Drawer(
@@ -56,7 +62,7 @@ class RevealScreenP5 extends StatelessWidget {
                             ),
                             onPressed: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context){
-                                return InputScreen();
+                                return AnimalRevealScreen5();
                               }));
                             },
                             child: Text("Tap to reveal!", style: TextStyle(fontSize: 30,)),

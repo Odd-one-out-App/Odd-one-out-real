@@ -2,6 +2,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:odd_one_out/CatagoryScreen.dart';
 import 'package:odd_one_out/RevealScreen.dart';
 
@@ -11,6 +12,9 @@ class AnimalIntroScreen extends StatelessWidget {
   var revScreen = RevealScreen();
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return Scaffold(
          backgroundColor: Colors.grey[600],
         appBar: AppBar(
@@ -57,8 +61,7 @@ class AnimalIntroScreen extends StatelessWidget {
                         children: [
                           Container(
                             margin: EdgeInsets.fromLTRB(30, 500, 120, 50),
-                            color: Colors.white,
-                            child: MaterialButton(
+                             child: MaterialButton(
                               height: 40.0,
                               minWidth: 96.0,
                               color: Colors.yellow[200],

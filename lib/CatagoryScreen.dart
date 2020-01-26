@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:odd_one_out/AnimalIntroScreen.dart';
 import 'package:odd_one_out/ClothesIntroScreen.dart';
 import 'package:odd_one_out/FoodIntroScreen.dart';
@@ -60,6 +61,9 @@ class Catagory {
 class CatagoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp
+    ]);
     return new Scaffold(
         backgroundColor: Colors.grey[600],
 //        drawer: Drawer(
@@ -76,14 +80,14 @@ class CatagoryScreen extends StatelessWidget {
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount( crossAxisCount: 2,),
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.only(top: 20.0,left: 10.0, right: 20.0),
+                  padding: const EdgeInsets.only(top: 10.0,left: 10.0, right: 20.0),
                   child: Card(
                     shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
                   ),color:Colors.amber[100],
                       child: Column( children: <Widget>[
                     Container(child: Padding(
-                      padding: const EdgeInsets.all(15.0),
+                      padding: const EdgeInsets.all(8.0),
 
                       child: Image.asset(images[index], fit: BoxFit.cover,),
                     ), height: 100),
