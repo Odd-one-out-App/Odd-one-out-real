@@ -9,10 +9,9 @@ import 'package:odd_one_out/TutorialScreen.dart';
 import 'package:odd_one_out/AnimalRevealScreen.dart';
 
 
-var inputScreen = new InputScreen();
 
- var input1 = inputScreen.nameInput1.text;
-List<String> food=["Pizza","Out of the loop"];
+
+ List<String> food=["Pizza","Out of the loop"];
 
 class RevealScreen extends StatelessWidget {
   @override
@@ -20,7 +19,8 @@ class RevealScreen extends StatelessWidget {
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp
     ]);
-    return new Scaffold(
+
+     return new Scaffold(
         backgroundColor: Colors.grey[600],
 //        drawer: Drawer(
 //        ),
@@ -39,6 +39,7 @@ class RevealScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   children: <Widget>[
                     new Container(
+
                     ),
                     new Container(
                       margin: EdgeInsets.fromLTRB(130, 0, 0, 150),
@@ -64,10 +65,13 @@ class RevealScreen extends StatelessWidget {
                               ),
                               onPressed: () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                                  return AnimalRevealScreen();
+                                   return AnimalRevealScreen();
                                 }));
+
+
                               },
                               child: Text("Tap to reveal!", style: TextStyle(fontSize: 30,)),
+
                             )),
                       ),
 

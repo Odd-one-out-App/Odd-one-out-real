@@ -42,7 +42,7 @@ class ClothesIntroScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0, 200.0, 0, 0),
+                          margin: EdgeInsets.fromLTRB(0, 280.0, 0, 0),
                           child: new Text(''' T-shirt,jeans or sweat pants: How surprised would you be to meet someone who doesn’t have this?
 We all love clothes and it is important to most people in life.
 

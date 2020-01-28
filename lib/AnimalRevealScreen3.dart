@@ -55,7 +55,7 @@ class AnimalRevealScreen3 extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Text(food[0],style:TextStyle(fontSize: 60),),
+                              Text(food[0],style:TextStyle(fontSize: 60,color: Colors.white),),
                             ],
                           )),
                     ),

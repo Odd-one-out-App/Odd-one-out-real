@@ -43,7 +43,7 @@ class FoodIntroScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Container(
-                          margin: EdgeInsets.fromLTRB(0, 200.0, 0, 0),
+                          margin: EdgeInsets.fromLTRB(0, 250.0, 0, 0),
                           child: new Text('''Everybody loves food and has opinions on different kinds of food. Some people like Chinese food, indian food or italian food. Food is great for icebreakers and other social activities. This is a classic category that everybody likes.
 
 

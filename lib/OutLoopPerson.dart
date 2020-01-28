@@ -42,12 +42,12 @@ class OutLoopPerson extends StatelessWidget {
                     new Container(
                     ),
                     new Container(
-                      margin: EdgeInsets.fromLTRB(130, 0, 0, 150),
+                      margin: EdgeInsets.fromLTRB(169, 0, 0, 150),
                       width: 400,
                       height: 400,
                     ),
                     new Container(
-                      margin: const EdgeInsets.only(left: 0.0, right: 0,top: 0.0,bottom: 250),
+                      margin: const EdgeInsets.only(left: 19.0, right: 0,top: 0.0,bottom: 250),
                       child: ButtonTheme(
                           buttonColor: Colors.amberAccent[100],
                           minWidth: 150.0,
@@ -55,8 +55,8 @@ class OutLoopPerson extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Text(food[1],style:TextStyle(fontSize: 60),),
-                              Container(margin:EdgeInsets.only(top: 40,left: 20),child: Text("You are the odd one out try and survive the game without anyone knowing.",style: TextStyle(fontSize: 30),))
+                              Text(food[1],style:TextStyle(fontSize: 60,color: Colors.white),),
+                              Container(margin:EdgeInsets.only(top: 40,left: 20),child: Text("You are the odd one out try and survive the game without anyone knowing.",style: TextStyle(fontSize: 30,color: Colors.white),))
                             ],
                           )),
                     ),

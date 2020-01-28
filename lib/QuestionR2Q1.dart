@@ -4,6 +4,7 @@ import 'dart:ui' as prefix1;
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as prefix0;
 import 'package:flutter/services.dart';
+import 'package:odd_one_out/GuessScreen.dart';
 import 'package:odd_one_out/InputScreen.dart';
 import 'package:odd_one_out/TutorialScreen.dart';
 
@@ -53,7 +54,7 @@ class QuestionR2Q1 extends StatelessWidget {
                       width: 400,
                       height: 400,
                       child: Text(
-                        "Person 1 asks Person 3", //would randomly generate using the names from the input screen
+                        "Person 2 asks Person 3", //would randomly generate using the names from the input screen
                         style: TextStyle(
                           fontSize: 30.0,
                           color: Colors.white,
@@ -103,7 +104,7 @@ class QuestionR2Q1 extends StatelessWidget {
                                 ),
                                 onPressed: () {
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                                    return InputScreen(); //would return to the first question screen
+                                    return GuessScreen(); //would return to the first question screen
                                   }));
                                 },
                                 child: Text("Next Question", style: TextStyle(fontSize: 45,)),

@@ -5,27 +5,67 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:odd_one_out/CatagoryScreen.dart';
 
+
 class InputScreen extends StatelessWidget {
   @override
 
 
 //  List<TextEditingController> formInput = [];
- var list = new  List<TextEditingController>();
+     var list = new List<TextEditingController>();
 
-  TextEditingController nameInput1 = new TextEditingController();
-  TextEditingController nameInput2 = new TextEditingController();
-  TextEditingController nameInput3 = new TextEditingController();
-  TextEditingController nameInput4 = new TextEditingController();
-  TextEditingController nameInput5 = new TextEditingController();
-  TextEditingController nameInput6 = new TextEditingController();
 
-void saveInput(){
+  final TextEditingController nameInput1 = new TextEditingController();
+  final TextEditingController nameInput2 = new TextEditingController();
+  final TextEditingController nameInput3 = new TextEditingController();
+  final TextEditingController nameInput4 = new TextEditingController();
+  final TextEditingController nameInput5 = new TextEditingController();
+  final TextEditingController nameInput6 = new TextEditingController();
+
+
+  String name1;
+  String name2;
+  String name3;
+  String name4;
+  String name5;
+  String name6;
+
+
+
+
+//  getInput(input1){
+//    String input1 = nameInput1.toString();
+//    String input2 = nameInput2.toString();
+//    String input3 = nameInput3.toString();
+//    String input4 = nameInput4.toString();
+//    String input5 = nameInput5.toString();
+//    String input6 = nameInput6.toString();
+//
+//
+//  }
+
+  String getName1(name1){
+    name1 = nameInput1.text;
+    return name1;
+  }
+
+ void saveInput(){
   list.add(nameInput1);
   list.add(nameInput2);
   list.add(nameInput3);
   list.add(nameInput4);
   list.add(nameInput5);
   list.add(nameInput6);
+
+
+}
+
+void showNameInputted(){
+  print(nameInput1);
+  print(nameInput2);
+  print(nameInput3);
+  print(nameInput4);
+  print(nameInput5);
+  print(nameInput6);
 
 }
 
@@ -180,9 +220,13 @@ void saveInput(){
                   onPressed: () {
                     saveInput();
                     Navigator.push(context, MaterialPageRoute(builder: (context){
+
                       return CatagoryScreen();
                     }));
-                  print(list.length);
+//                  print(list.length);
+                    print(list.getRange(0, 6));
+
+
 
                   },
                   child: Text(

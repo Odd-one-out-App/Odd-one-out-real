@@ -87,7 +87,7 @@ class CatagoryScreen extends StatelessWidget {
                   ),color:Colors.amber[100],
                       child: Column( children: <Widget>[
                     Container(child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(5.0),
 
                       child: Image.asset(images[index], fit: BoxFit.cover,),
                     ), height: 100),

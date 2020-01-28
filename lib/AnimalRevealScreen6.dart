@@ -55,7 +55,7 @@ class AnimalRevealScreen6 extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Text(food[0],style:TextStyle(fontSize: 60),),
+                              Text(food[0],style:TextStyle(fontSize: 60,color: Colors.white),),
                             ],
                           )),
                     ),
@@ -102,7 +102,7 @@ class AnimalRevealScreen6 extends StatelessWidget {
                                     return Question1(); //Will return the next Reveal screen but names would be random in each one
                                   }));
                                 },
-                                child: Text("Start", style: TextStyle(fontSize: 45,)),
+                                child: Text("Start", style: TextStyle(fontSize: 45)),
                               )),
                         ),
                       ],
